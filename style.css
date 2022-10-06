@@ -2,6 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+serif');
 
+@keyframes rotmen{
+0%{
+    transform: rotateX(-90deg);
+}
+
+
+100%{
+transform: rotateX(0deg);
+
+}
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +26,20 @@
     display: grid;
     grid-template-rows: auto, auto, auto, 1fr, 1fr, auto;
 }
+.main2 {
+    background-color: #e7e7e7;
+
+    display: grid;
+    grid-template-rows: auto, auto, auto, 1fr, 1fr, auto;
+}
+
 
 header {
 
     background: #922d50;
-    width: 100%;
-    height: 164px;
-    place-items: center;
+    
+    
+    
 }
 
 section {
@@ -37,10 +57,10 @@ section {
 
     width: 100%;
     height: 10%;
-    background-color: #bcb8b1;
+    background-color: #e7e7e7 ;
     display: grid;
     grid-auto-flow: column;
-
+    box-shadow: inset 2px 2px 2px 1px  #E85D75; 
 }
 
 
@@ -105,6 +125,17 @@ h2 {
     
 }
 
+.rosb{
+    background-color: #E85D75;
+    font-weight: 400;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    
+    font-family: 'Suranna', serif;
+    border-radius: 20px;
+}
+
 h3 {
     font-weight: lighter;
     font-size: 28px;
@@ -113,6 +144,15 @@ h3 {
     font-family: 'Noto Serif', serif;
     text-decoration: none;
 
+}
+
+.litentext{
+    font-weight: lighter;
+    font-size: 28px;
+    color: black;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    text-decoration: none;
 }
 
 footer {
@@ -147,16 +187,70 @@ footer {
 
 .overtext {
     background-color: #E85D75;
-  
+    align-items: center;
+    
 }
 
-article {
+.article1 {
     background-color: #e7e7e7;
     display: grid;
     grid-auto-flow: column;
-    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
     line-height: 0.2;
     padding: 5%;
+    width: 70%;
+}
+
+.artcl2{
+    background-color: #e7e7e7;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+        
+    line-height: 0.2;
+    padding: 5%;
+    border-radius: 200px;
+    box-shadow: inset 2px 2px 2px 1px  #E85D75;
+
+}
+
+.helsida{
+align-items: center;
+justify-items: left;
+display: grid;
+grid-auto-flow: column;
+grid-template-columns: repeat(2,1fr);
+
+}
+
+.halvsida{
+    display: block;
+grid-template-rows: auto;
+
+
+}
+
+.stor{
+margin: none;
+display: grid;
+grid-auto-flow: row;
+grid-template-rows: repeat(3, 1fr) ;
+
+padding: 10%;
+height: 50%;
+}
+
+
+
+.hemvan{
+margin: none;
+}
+
+.hemm{
+display: grid;
+grid-auto-flow: column;
+grid-template-columns: 1fr, 1fr;
 }
 
 .bild {
@@ -185,8 +279,8 @@ article {
 
 .dropdwn {
     background-color: #e7e7e7;
-    padding: 16px;
-    font-size: 16px;
+    padding: 74%;
+    
     border: none;
     cursor: pointer;
 
@@ -199,7 +293,8 @@ article {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-
+    animation: rotmen 200ms ease-in-out forwards;
+        transform-origin: top center;
 }
 
 .dorpdondiv a {
@@ -212,6 +307,40 @@ article {
 
 .dropdwn:hover .dorpdondiv {
     display: block;
+    
+}
 
+.pafnamn{
+margin: none;
+display: grid;
+grid-auto-flow: row;
+grid-template-rows: repeat(2, 1fr);
+height: 20%;
 
 }
+
+.pafnamn2{
+    margin: none;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(2, 1fr);
+    height: 20%;
+    justify-items: left;
+    }
+
+.nisho{
+    padding: left 10px;
+    
+    box-shadow: inset 5px 0 5px -5px #E85D75;
+    justify-items: end;
+}
+
+
+
+.sidebar{
+    background-color: white;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: right;
+    }
