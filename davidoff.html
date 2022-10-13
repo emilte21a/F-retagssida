@@ -10,10 +10,10 @@
 
 <body class="main2">
         <header>
-            <h1>ESSENCE
-                <img class="frage" src="https://cdn-icons-png.flaticon.com/512/27/27355.png"  alt="Free Icon | Circular perfume bottle with rectangular cover"  width="1.8%"> 
-    
+            <a class="hem" href="index.html">
+                <h1>ESSENCE<img class="frage" src="https://cdn-icons-png.flaticon.com/512/27/27355.png"  alt="Free Icon | Circular perfume bottle with rectangular cover"  width="1.8%"> 
             </h1>
+            </a>
     
         </header>
     
@@ -45,30 +45,120 @@
     </div>
     
 <div class="helsida">
-    <article class="artcl2">
-            <img class="bild3"src="davidoff.png" alt="coolwater" width="300px">
-     </article>
-<div class="stor">
-    <div class="pafnamn2">
-        <h2 class="rosb">FRI LEVERANS</h2>
-    </div>
 
-    <div class="pafnamn2">
-        <h2 class="brodtext">Coolwater</h2>
-        <h3 class="litentext">Davidoff</h3>
-    </div>
+    
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
         
-    <section class="bryt"> </section>
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("imagecontainer");
+          let dots = document.getElementsByClassName("slide1");
+          
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          
+        }
+        </script>
 
-        <div class="halvsida">
-            <div class="pafnamn2">
-                <h2 class="brodtext">344 kr</h2>
-            </div>
+    <div class="slidercontainer">
+        
+
+        <div class="imagecontainer">
+            <img class="slide1"src="davidoff.png" alt="coolwater" height="300px">
             
-            <section class="bryt"> </section>
-
-            <h3 class="litentext"> 250 kr med koden: prfm20</h3>
         </div>
+
+        <div class="imagecontainer">    
+            <img class="slide1"src="coolwaterr.jpg" alt="coolwater2" height="300px">
+
+        </div>
+
+        <div class="buttoncontainer">
+            <a class="next" onclick="plusSlides(1)"></a>
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            
+        <div class="imgrow">
+            <div class="tumnagel">
+                <img class="slide1 cursor active"src="davidoff.png" alt="coolwater" style="width:90px" onclick="currentSlide(1)">
+            </div>
+
+            <div class="tumnagel">
+                <img class="slide1 cursor active" src="coolwaterr.jpg" alt="coolwater2" style="width:90px" onclick="currentSlide(2)">
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+<div class="stor">
+    <div class="mindre"> 
+        <div class="pafnamn2">
+            <h2 class="rosb">FRI LEVERANS</h2>
+        </div>
+
+        <div class="kolom"> 
+            <div class="pafnamn2">
+                <h2 class="brodtext">Coolwater</h2>
+                <h3 class="litentext">Davidoff</h3>
+            
+    
+        
+
+            <div class="halvsida">
+                <div class="pafnamn2">
+                    <h2 class="brodtext">344 kr</h2>
+
+                    <h3 class="litentext"> 250 kr med koden: prfm20</h3>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    
+</div>
+<div class="mindre">
+    <div class="pafnamn2">
+    <h2 class="brodtext">Topnoter:</h2>
+    <h3 class="litentext">Lavender, Mint, Rosmarin, Koriander</h3>
+    </div>  
+
+    <div class="pafnamn2">
+        <h2 class="brodtext">Hjärtnoter:</h2>
+        <h3 class="litentext">Sandalträ, Neroli, Geranium, Jasmin</h3>
+    </div>  
+
+    <div class="pafnamn2">
+        <h2 class="brodtext">Basnoter:</h2>
+        <h3 class="litentext">Mysk, Tobak, Ekmossa, Ambra</h3>
+    </div>  
+
+</div>
+
     </div>
 </div>
 
