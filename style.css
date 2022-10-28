@@ -597,6 +597,11 @@ width: 200px;
     h1{
         font-size: 20px;
     }
+
+    .brodtext2{
+
+        font-size: 25px;
+    }
 }
 
 @media only screen and (max-width: 1000px)
