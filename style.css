@@ -590,7 +590,8 @@ width: 200px;
     }
 
     .nisho{
-        width: 70%;
+        max-width: 70%;
+
     }
     
     h1{
@@ -621,13 +622,15 @@ width: 200px;
     .sidebar{
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
-        justify-items: center;     
+        justify-items: left;     
         max-height: 250px;   
+        
         
     }
 
     .nisho{
         height: 60%;
+        width: 60%;
         display: grid;
         justify-items: center;
     }
@@ -653,20 +656,21 @@ width: 200px;
     }
 
     .brodtext4{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .brodtext3{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .brodtext2{
-        font-size: 30px;
+        font-size: 25px;
         line-height: 30px;
     }
 
     .brodtext{
-        font-size: 30px;
+        font-size: 25px;
+        line-height: 0;
     }
 
 .litentext{
@@ -675,7 +679,7 @@ width: 200px;
 
 .litentext2{
 
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .litentext3{
@@ -691,12 +695,19 @@ h2{
 }
 
 .article1{
+    gap: 0px;
+    padding-left:2px;
     width: 100%;
+}
+
+.infofot{
+width: 60%;
 
 }
 
 .footer{
     height: 50%;
+    width: 60%;
 }
 
 }
